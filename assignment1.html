@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Chan's html</title>
+  <link rel="stylesheet" href="./CSS/assignment1.css"/>
+</head>
+<body>
+  <div id="container">
+    <header id="header">
+      <div id="intro">
+        <h1>Chan.html</h1>
+        <h2>This is Chan's HTML page</h2>
+      </div>
+      <form id="login-form">
+        <fieldset>
+          <legend>User Profile</legend>
+          <ul>
+            <li>
+              <label for="user-id">Login Name</label>
+              <input type="text" id="user-id" placeholder="name" required pattern="^[a-zA-Z]{8,20}$"/>
+            </li>
+            <li>
+              <label for="user-pw">Password</label>
+              <input type="password" id="user-pw" placeholder="password" required pattern="^[a-zA-Z0-9]{10,20}$"/>
+            </li>
+            <li>
+              <label for="user-age">Age</label>
+              <input type="number" id="user-age" placeholder="age" min="18" max="65"/>
+            </li>
+          </ul>
+          <div id="buttons">
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Reset"/>
+          </div>
+        </fieldset>
+      </form>
+    </header>
+    
+    <aside id="sidebar">
+      <nav>
+        <h2>Contents</h2>
+        <ol>
+          <li><a href="#welcome">Welcome</a></li>
+          <li><a href="#education">Educational Background</a></li>
+          <li><a href="#career">Work Experience</a></li>
+          <li><a href="#current-course">Current Course</a></li>
+        </ol>
+      </nav>
+    </aside>
+    
+    <main id="contents">
+      <article id="welcome">
+        <figure>
+          <h2>Welcome to Chan's html page</h2>
+          <a href="https://dummyimage.com/"><img src="./image/laptop-image.jpg" alt="Laptop" style="width: 600px; height: 400px;"/></a>
+          <figcaption>The image of a laptop<br/><small>Click the image to move to dummyimage.com</small></figcaption>
+        </figure>
+        <span>
+          <br/>Hello!<br/>My name is Koh Dong-Chan.<br/>I'm from South Korea.<br/>Now I'm studying in BCIT to be a software engineer.
+        </span>
+      </article>
+      <section id="education">
+        <h2>My Educational Background</h2>
+        <dl id="dl-list">
+          <dt><b><br/>Secondary Education</b></dt>
+          <dd>2015.02 - Bugwang High School Graduation</dd>
+          <dt><b><br/>Post-Secondary Education</b></dt>
+          <dd>2015.03~2020.08 - Flight Operations in Hanseo University</dd>
+          <dd>2021.09~2023.05 - <abbr title="Computer Systems Technology">CST</abbr> in <a href="https://www.bcit.ca/"><abbr title="British Columbia Institue of Technology">BCIT</abbr></a></dd>
+        </dl>
+      </section>
+      <section id="career">
+        <h2>My Work Experience</h2>
+        <ul id="work-list">
+          <li>2016.08~2018.04 - Military Service</li>
+          <li>Part-time in restaurants and a convenience store</li>
+        </ul>
+      </section>
+      <section id="current-course">
+        <h2>My Current Courses</h2>
+        <table id="course-table">
+          <tr>
+            <th></th>
+            <th>Course<br/>Name</th>
+            <th>Course<br/>Number</th>
+            <th>Course<br/>Credits</th>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>Programming<br/>Methods</td>
+            <td>COMP1510</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Web<br/>Development 1</td>
+            <td>COMP1537</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Projects 1</td>
+            <td>COMP1800</td>
+            <td>4</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    
+    <footer id="footer">
+      <div>
+        <p><b>Thank you!<br/>This webpage is designed by<br/><i>Koh Dong-Chan</i></b></p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
